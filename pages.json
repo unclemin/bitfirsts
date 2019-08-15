@@ -1,0 +1,132 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"app-plus": {
+					// "bounce": "none", //关闭窗口回弹效果
+					"titleNView": false ,//禁用原生导航栏
+					"animationType": "slide-in-right",
+					"animationDuration": 300
+					// #ifdef APP-PLUS
+					,
+					"pullToRefresh": {
+					    "support": true,
+						"offset":"216upx",
+					    "color": "#aaaaaa",
+					    "style": "circle",
+					    "contentdown": {
+					        "caption": "释放更新"
+					    },
+					    "contentover": {
+					        "caption": ""
+					    },
+					    "contentrefresh": {
+					        "caption": "加载中..."
+					    }
+					}
+					// #endif
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/market/market",
+            "style" : {
+				"navigationBarTitleText":"行情",
+				"app-plus": {
+					"bounce": "none", //关闭窗口回弹效果
+					"animationType": "slide-in-right",
+					"animationDuration": 300
+				}
+			}
+        }
+        ,{
+            "path" : "pages/bit/bit",
+            "style" : {
+				"navigationBarTitleText":"BTC/USDT",
+				"app-plus": {
+					// "bounce": "none", //关闭窗口回弹效果
+					// "titleNView": false ,//禁用原生导航栏
+					"animationType": "slide-in-right",
+					"animationDuration": 300
+					// #ifdef APP-PLUS
+					,
+					"pullToRefresh": {
+					    "support": true,
+						"offset":"216upx",
+					    "color": "#aaaaaa",
+					    "style": "circle",
+					    "contentdown": {
+					        "caption": "释放更新"
+					    },
+					    "contentover": {
+					        "caption": ""
+					    },
+					    "contentrefresh": {
+					        "caption": "加载中..."
+					    }
+					}
+					// #endif
+				}
+			}
+        }
+        ,{
+            "path" : "pages/legalbit/legalbit",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/member/member",
+            "style" : {
+				"navigationBarTitleText":"我的",
+				"app-plus": {
+					// "bounce": "none", //关闭窗口回弹效果
+					"animationType": "slide-in-right",
+					"animationDuration": 300
+				}
+			}
+        }
+    ],
+	"globalStyle": {
+		"backgroundColor": "#F8F8F8",
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor":"#FFFFFF" 
+	},
+	"tabBar" : {
+	    "color" : "#c9cad4",
+	    "selectedColor" : "#8F82BC",
+	    "borderStyle" : "white",
+	    "backgroundColor" : "#ffffff",
+	    "list" : [
+	        {
+				"pagePath" : "pages/index/index",
+	            "iconPath" : "",
+	            "selectedIconPath" : "",
+	            "text" : "首页"
+	        },
+	        {
+	            "pagePath" : "pages/market/market",
+	            "iconPath" : "",
+	            "selectedIconPath" : "",
+	            "text" : "行情"
+	        },
+	        {
+	            "pagePath" : "pages/bit/bit",
+	            "iconPath" : "",
+	            "selectedIconPath" : "",
+	            "text" : "比比"
+	        },
+	        {
+	            "pagePath" : "pages/legalbit/legalbit",
+	            "iconPath" : "",
+	            "selectedIconPath" : "",
+	            "text" : "法币"
+	        },
+			{
+			    "pagePath" : "pages/member/member",
+			    "iconPath" : "",
+			    "selectedIconPath" : "",
+			    "text" : "我的"
+			}
+	    ]
+	}
+}
